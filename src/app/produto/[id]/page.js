@@ -1,5 +1,6 @@
 'use client'
 import { busca } from "@/app/model/produtos";
+import Produto from "@/componentes/Produto";
 import { useEffect, useState } from "react"
 
 export default function produtoID( props ){
@@ -42,11 +43,9 @@ export default function produtoID( props ){
 
             {
                 produto == null ? <p> Produto não encontrado... </p> :
-                <div>
-                    <h1> { produto.nome } </h1>
-                    <p> { produto.descricao } </p>
-                    <p> R$ {produto.preco}</p>
-                    <img src={produto.imagem} />
+                <div className="w-1/4 m-auto">
+                  
+                    <Produto produto={produto} descricao={true} largura={350} />
 
                 <br/>
                 <label>

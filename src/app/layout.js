@@ -1,4 +1,4 @@
-//import "@/app/globals.css"
+import "@/app/globals.css"
 
 import Menu from "@/componentes/Menu"
 import Rodape from "@/componentes/Rodape"

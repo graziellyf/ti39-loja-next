@@ -33,7 +33,7 @@ export default function carrinho(){
                        return <div> 
                             <p> { objeto.nome } </p>
                             <p> { objeto.preco } </p>
-                            <img src={ objeto.imagem }height={300}/>
+                            <img src={ objeto.imagem }width={300}/>
                         </div>   
                    } )
                    
